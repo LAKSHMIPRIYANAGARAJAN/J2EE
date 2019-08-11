@@ -16,16 +16,15 @@ class Sum_of_digit_until_unitdigit
 		}
 	public static void main (String[] args) 
 	{
-		int a=0,res=0,ans;
+		int a=0,res=0;
 		Scanner sc=new Scanner(System.in);
 		a=sc.nextInt();
 		Sum_of_digit_until_unitdigit d= new Sum_of_digit_until_unitdigit();
 		res=d.sod(a);
 		if(res>9){
-		ans=d.sod(res);
-		System.out.println(ans);
+		res=d.sod(res);
 		}
-		else
 		System.out.println(res);
+		
 	}
 }
